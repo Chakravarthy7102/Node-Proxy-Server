@@ -4,8 +4,8 @@
   "description": "Proxy server to hide public API keys with rate limiting, caching",
   "main": "index.js",
   "scripts": {
-    "start": "node index",
-    "dev": "nodemon index"
+    "start": "nodemon -L index",
+    "dev": "nodemon -L index"
   },
   "author": "Brad Traversy",
   "license": "MIT",
@@ -18,6 +18,6 @@
     "needle": "^3.0.0"
   },
   "devDependencies": {
-    "nodemon": "^2.0.14"
+    "nodemon": "^2.0.15"
   }
 }
