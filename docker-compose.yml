@@ -4,6 +4,8 @@ services:
     build:
      context: .
      dockerfile: Dockerfile
+     args:
+      NODE_ENV: development
     image: nodejs_project
     container_name: backend
     restart: unless-stopped
