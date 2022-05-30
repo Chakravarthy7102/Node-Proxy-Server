@@ -24,6 +24,7 @@ app.use(express.static("public"));
 
 // Routes
 app.use("/api", require("./routes"));
+//changes done
 // Error handler middleware
 app.use(errorHandler);
 

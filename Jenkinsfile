@@ -1,10 +1,7 @@
+properties([pipelineTriggers([githubPush()])])
 pipeline {
     
     agent any
-    
-    triggers {
-        githubPush()
-    }
     
     environment{
         dockerhub=credentials('dockerhub')
